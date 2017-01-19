@@ -32,7 +32,6 @@ const COLUMN = [
     ["thumbs-up", '#1F1F1F', 40, '图文列表', 'Developing'],
     ["twitter", '#1F1F1F', 40, '通讯录', 'Developing'],
     ["tripadvisor", '#1F1F1F', 40, '图片懒加载', 'Developing'],
-
 ];
 
 class ShopPage extends BaseComponent {
@@ -52,9 +51,9 @@ class ShopPage extends BaseComponent {
         //此方法中的数组必须是3的倍数，否则会报错
         var allNav = [];
         for (var i = 0; i < Math.round(COLUMN.length / 3); i++) {
-            var one = 0 + (3 * i);
-            var two = 1 + (3 * i);
-            var three = 2 + (3 * i);
+            let one = 3 * i;
+            let two = 1 + (3 * i);
+            let three = 2 + (3 * i);
             allNav.push(
                 <NineLattice
                     key={i}

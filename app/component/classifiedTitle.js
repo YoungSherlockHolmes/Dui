@@ -32,9 +32,7 @@ class ClassifiedTitle extends BaseComponent {
     renderBody() {
         return (
             <View style={styles.container}>
-               <View style={{backgroundColor:'yellow',height:100}}>
-                    
-               </View>
+               <View><Text style={{color:'lightgreen'}}>分类标题</Text></View>
             </View>
         );
     }
