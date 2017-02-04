@@ -11,6 +11,9 @@ import GuidePage from '../component/guidePage';//引导页
 import ClassifiedTitle from '../component/classifiedTitle';//分类标题
 import ScoreWindow from '../component/scoreWindow';//星级评分窗口
 import Developing from '../component/developing';//正在开发中提示
+import Sliders from '../component/sliders';//滑块1
+import Sliders1 from '../component/sliders1';//滑块2
+
 import {
   Navigator,
 } from 'react-native';
@@ -37,6 +40,14 @@ routeMap.set('ScoreWindow', {
 });
 routeMap.set('Developing', {
   component: Developing,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('Sliders', {
+  component: Sliders,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('Sliders1', {
+  component: Sliders1,
   sceneAnimation: Navigator.SceneConfigs.FloatFromRight
 });
 

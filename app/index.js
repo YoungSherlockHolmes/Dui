@@ -75,7 +75,7 @@ export default class App extends Component {
           configureScene={this.configureScene}
           renderScene={this.renderScene}
           initialRoute={{
-            name: 'GuidePage',
+            name: 'MainPage',
           }}/>
       </View>
     );
