@@ -16,7 +16,6 @@ import {
     ScrollView,
     TextInput
 } from 'react-native';
-// import BaseComponent from '../base/baseComponent';
 import Focus from '../component/focus';
 import PalaceNavigation from '../common/palaceNavigation';
 import Icon from 'react-native-vector-icons/EvilIcons';
@@ -39,13 +38,7 @@ class HomePage extends Component {
     constructor(props) {
         super(props);
     }
-
-    // getNavigationBarProps() {
-    //     return {
-    //         title: '主页'
-    //     };
-    // }
-
+    
     render() {
         return (
             <View style={styles.container}>
