@@ -12,4 +12,4 @@
 
 ##效果图
 * 整体效果
-![image](https://github.com/YoungSherlockHolmes/Dui/tree/master/renders/1.jpg)
+![image](./renders/1.jpg)
