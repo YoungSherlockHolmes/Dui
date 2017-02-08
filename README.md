@@ -9,3 +9,7 @@
         模板商店，
         个人中心
 - 本项目中使用的基础图标都是来源于react-native-vector-icons
+
+##效果图
+* 整体效果
+![image](https://github.com/YoungSherlockHolmes/Dui/tree/master/renders/1.jpg)

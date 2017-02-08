@@ -64,7 +64,7 @@ const PalaceNavigation =
     );
 const styles = StyleSheet.create({
     gongge: {
-        flexDirection: 'row', width: width, paddingTop: 10
+        flexDirection: 'row', width: width, paddingTop: 8,paddingBottom:8
     },
     gongge_li: {
         width: width / 5, alignItems: 'center',

@@ -13,6 +13,8 @@ import ScoreWindow from '../component/scoreWindow';//星级评分窗口
 import Developing from '../component/developing';//正在开发中提示
 import Sliders from '../component/sliders';//滑块1
 import Sliders1 from '../component/sliders1';//滑块2
+import ProductList from '../component/productList';//商品列表
+
 
 import {
   Navigator,
@@ -50,6 +52,12 @@ routeMap.set('Sliders1', {
   component: Sliders1,
   sceneAnimation: Navigator.SceneConfigs.FloatFromRight
 });
+routeMap.set('ProductList', {
+  component: ProductList,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+
+
 
 export function registerNavigator(tempNavigator) {
   if (_navigator) {

@@ -20,6 +20,7 @@ import Focus from '../component/focus';
 import PalaceNavigation from '../common/palaceNavigation';
 import Icon from 'react-native-vector-icons/EvilIcons';
 var {height, width} = Dimensions.get('window');
+import ProductList from '../component/productList';
 
 const COLUMN = [
     [require('../image/tutu.jpg'), '京东超市'],
@@ -38,32 +39,32 @@ class HomePage extends Component {
     constructor(props) {
         super(props);
     }
-    
+
     render() {
         return (
             <View style={styles.container}>
-                <ScrollView showsVerticalScrollIndicator={false}>
-                    <View style={styles.Search_bar}>
-                        <View style={styles.Search_bar_lf}>
-                            <Text style={styles.Search_bar_lf_tx}>JD京东</Text>
-                        </View>
-                        <View>
-                            <TextInput
-                                style={styles.style_sousuo_input}
-                                placeholder='搜索京东商品/店铺'
-                                numberOfLines={1}
-                                autoFocus={false}//为true则自动选中搜索栏
-                                underlineColorAndroid={'transparent'}
-                                textAlign='left'
-                               />
-                            <View style={styles.Search_bar_ce}>
-                                <Icon name="search" size={22} color="#484B40" />
-                            </View>
-                        </View>
-                        <View style={styles.Search_bar_rg}>
-                            <Text style={{color:'white'}}>登陆</Text>
+                <View style={styles.Search_bar}>
+                    <View style={styles.Search_bar_lf}>
+                        <Text style={styles.Search_bar_lf_tx}>JD京东</Text>
+                    </View>
+                    <View>
+                        <TextInput
+                            style={styles.style_sousuo_input}
+                            placeholder='搜索京东商品/店铺'
+                            numberOfLines={1}
+                            autoFocus={false}//为true则自动选中搜索栏
+                            underlineColorAndroid={'transparent'}
+                            textAlign='left'
+                            />
+                        <View style={styles.Search_bar_ce}>
+                            <Icon name="search" size={22} color="#484B40" />
                         </View>
                     </View>
+                    <View style={styles.Search_bar_rg}>
+                        <Text style={{ color: 'white' }}>登陆</Text>
+                    </View>
+                </View>
+                <ScrollView showsVerticalScrollIndicator={false}>
                     <Focus />
                     <View style={{ backgroundColor: 'white' }}>
                         <PalaceNavigation
@@ -91,6 +92,7 @@ class HomePage extends Component {
                             fiveText={COLUMN[9][1]}
                             />
                     </View>
+                    <ProductList />
                 </ScrollView>
             </View>
         );
@@ -118,19 +120,19 @@ const styles = StyleSheet.create({
         borderWidth: 1, width: width - 100,
         borderRadius: 20
     },
-    Search_bar:{
-         flex: 1, height: 60, flexDirection: 'row',backgroundColor: '#5CB85C', 
+    Search_bar: {
+         height: 60, flexDirection: 'row', backgroundColor: '#5CB85C',
     },
-    Search_bar_lf:{
+    Search_bar_lf: {
         width: 60, justifyContent: 'center', alignItems: 'center',
     },
-    Search_bar_lf_tx:{
-        color:'white',fontWeight:'bold',fontSize:15
+    Search_bar_lf_tx: {
+        color: 'white', fontWeight: 'bold', fontSize: 15
     },
-    Search_bar_ce:{
+    Search_bar_ce: {
         position: 'absolute', left: 10, top: 20
     },
-    Search_bar_rg:{
+    Search_bar_rg: {
         width: 40, justifyContent: 'center', alignItems: 'center',
     },
 });

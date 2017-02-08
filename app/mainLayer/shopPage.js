@@ -24,7 +24,7 @@ import Icon from 'react-native-vector-icons/Entypo';
 
 const COLUMN = [
     ["language", '#1F1F1F', 40, '分类标题', 'ClassifiedTitle'],
-    ["flag", '#1F1F1F', 40, '宫格排版', 'Developing'],
+    ["flag", '#1F1F1F', 40, '宫格排版', 'ProductList'],
     ["github", '#1F1F1F', 40, '顶部导航', 'Developing'],
     ["magnet", '#1F1F1F', 40, '滑块', 'Sliders'],
     ["globe", '#1F1F1F', 40, '滑块2', 'Sliders1'],
