@@ -1,3 +1,11 @@
+/**
+ * 文件名称：商品列表
+ * 文件作者：YoungSherlockHolmes
+ * 编写日期：2017年02月7日
+ * 版权所有：湖南速微消费科技有限公司
+ * 个人官网：http://www.051z.cc
+ * 开源地址：https://github.com/YoungSherlockHolmes/Dui
+ */
 import React, { Component } from 'react';
 import {
     AppRegistry,

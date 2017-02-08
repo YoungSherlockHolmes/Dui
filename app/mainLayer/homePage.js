@@ -14,13 +14,16 @@ import {
     Image,
     Dimensions,
     ScrollView,
-    TextInput
+    TextInput,
+    TouchableOpacity
 } from 'react-native';
 import Focus from '../component/focus';
 import PalaceNavigation from '../common/palaceNavigation';
-import Icon from 'react-native-vector-icons/EvilIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 var {height, width} = Dimensions.get('window');
 import ProductList from '../component/productList';
+import { getNavigator } from '../route/route';
 
 const COLUMN = [
     [require('../image/tutu.jpg'), '京东超市'],
@@ -40,29 +43,53 @@ class HomePage extends Component {
         super(props);
     }
 
+    _onPress(navname) {
+        getNavigator().push({ name: navname });
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.Search_bar}>
-                    <View style={styles.Search_bar_lf}>
-                        <Text style={styles.Search_bar_lf_tx}>JD京东</Text>
-                    </View>
+                    <TouchableOpacity
+                        activeOpacity={0.8}
+                        style={styles.Search_bar_lf}>
+                        <Icon name="ios-qr-scanner" size={26} color="white" />
+                        <Text style={styles.Search_bar_lf_tx}>扫啊扫</Text>
+                    </TouchableOpacity>
                     <View>
-                        <TextInput
+                        <TouchableOpacity
+                         activeOpacity={1}
+                         onPress={() => this._onPress('SearchList')}
+                         style={styles.style_sousuo_input}>
+                            <Text>搜索京东商品/店铺</Text>
+                        </TouchableOpacity>
+                        {/** <TextInput
                             style={styles.style_sousuo_input}
                             placeholder='搜索京东商品/店铺'
                             numberOfLines={1}
                             autoFocus={false}//为true则自动选中搜索栏
                             underlineColorAndroid={'transparent'}
                             textAlign='left'
+                            // editable={false}//设置不能编辑
+                            onFocus={() => this._onPress('SearchList')}
                             />
+                             */}
                         <View style={styles.Search_bar_ce}>
-                            <Icon name="search" size={22} color="#484B40" />
+                            <Icon name="ios-search-outline" size={22} color="#484B40" />
                         </View>
+                        <TouchableOpacity
+                            activeOpacity={0.8}
+                            style={styles.Search_bar_ce_rg}>
+                            <Icon name="ios-mic-outline" size={22} color="#484B40" />
+                        </TouchableOpacity>
                     </View>
-                    <View style={styles.Search_bar_rg}>
-                        <Text style={{ color: 'white' }}>登陆</Text>
-                    </View>
+                    <TouchableOpacity
+                        activeOpacity={0.8}
+                        style={styles.Search_bar_rg}>
+                        <Icon name="ios-text-outline" size={26} color="white" />
+                        <Text style={styles.Search_bar_lf_tx}>消息</Text>
+                    </TouchableOpacity>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <Focus />
@@ -118,22 +145,26 @@ const styles = StyleSheet.create({
         paddingLeft: 30,
         borderColor: '#f6f6f6',
         borderWidth: 1, width: width - 100,
-        borderRadius: 20
+        borderRadius: 20,
+        justifyContent: 'center',
     },
     Search_bar: {
-         height: 60, flexDirection: 'row', backgroundColor: '#5CB85C',
+        height: 60, flexDirection: 'row', backgroundColor: '#5CB85C',
     },
     Search_bar_lf: {
-        width: 60, justifyContent: 'center', alignItems: 'center',
+        width: 50, justifyContent: 'center', alignItems: 'center',
     },
     Search_bar_lf_tx: {
-        color: 'white', fontWeight: 'bold', fontSize: 15
+        color: 'white', fontSize: 10
     },
     Search_bar_ce: {
         position: 'absolute', left: 10, top: 20
     },
+    Search_bar_ce_rg: {
+        position: 'absolute', right: 10, top: 20
+    },
     Search_bar_rg: {
-        width: 40, justifyContent: 'center', alignItems: 'center',
+        width: 50, justifyContent: 'center', alignItems: 'center',
     },
 });
 

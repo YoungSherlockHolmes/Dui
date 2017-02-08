@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         width: width / 5, alignItems: 'center',
     },
     gongge_li_img: {
-        width: 40, height: 40, borderRadius: 50
+        width: 40, height: 40, borderRadius: 15
     },
     gongge_li_txbox:{
         paddingTop: 3

@@ -14,7 +14,7 @@ import Developing from '../component/developing';//正在开发中提示
 import Sliders from '../component/sliders';//滑块1
 import Sliders1 from '../component/sliders1';//滑块2
 import ProductList from '../component/productList';//商品列表
-
+import SearchList from '../component/searchList';//搜索列表
 
 import {
   Navigator,
@@ -56,7 +56,10 @@ routeMap.set('ProductList', {
   component: ProductList,
   sceneAnimation: Navigator.SceneConfigs.FloatFromRight
 });
-
+routeMap.set('SearchList', {
+  component: SearchList,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromBottom
+});
 
 
 export function registerNavigator(tempNavigator) {
