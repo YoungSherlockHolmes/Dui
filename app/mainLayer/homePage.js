@@ -64,7 +64,7 @@ class HomePage extends Component {
                          style={styles.style_sousuo_input}>
                             <Text>搜索京东商品/店铺</Text>
                         </TouchableOpacity>
-                        {/** <TextInput
+                         {/**<TextInput
                             style={styles.style_sousuo_input}
                             placeholder='搜索京东商品/店铺'
                             numberOfLines={1}
@@ -74,7 +74,7 @@ class HomePage extends Component {
                             // editable={false}//设置不能编辑
                             onFocus={() => this._onPress('SearchList')}
                             />
-                             */}
+                            */} 
                         <View style={styles.Search_bar_ce}>
                             <Icon name="ios-search-outline" size={22} color="#484B40" />
                         </View>

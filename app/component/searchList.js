@@ -28,12 +28,10 @@ class SearchList extends Component {
     constructor(props) {
         super(props);
     }
-    onLeftPressed() {
-        getNavigator().pop();
-    }
-    _onPress(navname) {
+    _onLeftPressed() {
         dismissKeyboard();//关闭键盘
-        getNavigator().push({ name: navname });
+        getNavigator().pop();
+        
     }
 
     render() {
@@ -41,7 +39,7 @@ class SearchList extends Component {
             <View style={styles.container}>
                 <View style={styles.Search_bar}>
                     <TouchableOpacity
-                        onPress={() => this._onPress('MainPage')}
+                        onPress={() => this._onLeftPressed()}
                         activeOpacity={0.8}
                         style={styles.Search_bar_lf}>
                         <Icons name="chevron-thin-left" size={26} color="white" />
@@ -90,7 +88,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         height: 40,
         marginTop: 10,
-        paddingLeft: 30,
+        paddingLeft: 30, paddingRight: 23,
         borderColor: '#f6f6f6',
         borderWidth: 1, width: width - 100,
         borderRadius: 20
