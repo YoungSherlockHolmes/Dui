@@ -23,21 +23,21 @@ const BANNER_IMGS = [
     require('../image/focus01.jpg'),
     require('../image/focus02.jpg'),
     require('../image/focus03.jpg'),
-    require('../image/focus02.jpg'),
-    require('../image/focus03.jpg')
+    require('../image/focus04.jpg'),
+    require('../image/focus05.jpg')
 ];
 
 var styles = StyleSheet.create({
     wrapper: {
-        height: 150,
+        height: 180,
     },
     slide: {
         width: width,
-        height: 150,
+        height: 180,
     },
     img: {
         width: width,
-        height: 150,
+        height: 180,
     },
     dots: {
         backgroundColor: '#CBCBCB', width: 8, height: 8, borderRadius: 4,
@@ -53,7 +53,7 @@ class Focus extends Component {
         return (
             <Swiper style={styles.wrapper}
                 showsButtons={false}
-                height={150}
+                height={180}
                 autoplay={true}
                 index={0}
                 autoplayTimeout={5}//切换时间
