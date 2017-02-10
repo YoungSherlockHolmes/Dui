@@ -45,7 +45,6 @@ class HomePage extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <HomeSearch />
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <Focus />
                     <View style={{ backgroundColor: 'white' }}>
@@ -76,6 +75,9 @@ class HomePage extends Component {
                     </View>
                     <ProductList />
                 </ScrollView>
+                <View style={styles.search_box}>
+                     <HomeSearch />
+                </View>
             </View>
         );
     }
@@ -85,6 +87,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#EFEFEF',
     },
+    search_box:{
+        position: 'absolute', top: 0
+    }
 });
 
 export default HomePage;

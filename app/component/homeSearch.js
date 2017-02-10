@@ -77,7 +77,7 @@ class HomeSearch extends Component {
 }
 const styles = StyleSheet.create({
     style_sousuo_input: {
-        backgroundColor: '#fff',
+        backgroundColor: '#f6f6f6',
         height: 40,
         marginTop: 10,
         paddingLeft: 30,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     },
     Search_bar: {
         height: 60, flexDirection: 'row', 
-        backgroundColor: '#5CB85C',
+        // backgroundColor: '#5CB85C',
     },
     Search_bar_lf: {
         width: 50, justifyContent: 'center', alignItems: 'center',
