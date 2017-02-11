@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 var {height, width} = Dimensions.get('window');
-import { getNavigator } from '../route/route';
+import { getNavigator } from '../../route/route';
 
 class HomeSearch extends Component {
     constructor(props) {

@@ -20,7 +20,7 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons';
 import Icons from 'react-native-vector-icons/Entypo';
 var {height, width} = Dimensions.get('window');
-import { getNavigator } from '../route/route';
+import { getNavigator } from '../../route/route';
 
 var dismissKeyboard = require('dismissKeyboard');//解决软键盘在失去焦点之后不关闭的问题
 

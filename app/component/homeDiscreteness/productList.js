@@ -117,8 +117,8 @@ class ReactNativeProject extends Component {
                 </TouchableOpacity>
                 <View style={styles.price_column}>
                     <View style={styles.price_column_lf}>
-                        <Text style={{ fontSize: 14, color: 'red', position: 'absolute', bottom: 1 }}>￥</Text>
-                        <Text style={{ fontSize: 18, color: 'red', paddingLeft: 15 }}>
+                        <Text style={styles.price_column_lf_txl}>￥</Text>
+                        <Text style={styles.price_column_lf_txr}>
                             {rowData.price}
                         </Text>
                     </View>
@@ -168,11 +168,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row', paddingTop: 5, alignItems: 'center', justifyContent: 'space-between', width: width / 2
     },
     price_column_lf: {
-        flexDirection: 'row',
+        flexDirection: 'row',marginLeft:5
     },
     price_column_rg: {
         borderWidth: 1,
         borderColor: '#999', borderRadius: 5, width: 60, alignItems: 'center', marginRight: 5
+    },
+    price_column_lf_txl:{
+        fontSize: 14, color: 'red', position: 'absolute', bottom: 1
+    },
+    price_column_lf_txr:{
+        fontSize: 18, color: 'red', paddingLeft: 12
     },
 });
 

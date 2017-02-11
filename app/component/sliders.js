@@ -83,7 +83,7 @@ export default class Sliders extends BaseComponent {
             <View style={styles.container}>
                 <View style={{ backgroundColor: 'white', padding: 10 }}>
                     <Image
-                        source={require('../image/focus02.jpg')}
+                        source={require('../image/focus/051z_cc_2.jpg')}
                         style={styles.image}>
                         <View style={[styles.box_z, {
                             "left": number

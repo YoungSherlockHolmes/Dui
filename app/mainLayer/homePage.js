@@ -17,10 +17,10 @@ import {
     TextInput,
     TouchableOpacity
 } from 'react-native';
-import Focus from '../component/focus';
+import Focus from '../component/homeDiscreteness/focus';
 import PalaceNavigation from '../common/palaceNavigation';
-import HomeSearch from '../component/homeSearch';
-import ProductList from '../component/productList';
+import HomeSearch from '../component/homeDiscreteness/homeSearch';
+import ProductList from '../component/homeDiscreteness/productList';
 import { getNavigator } from '../route/route';
 var {height, width} = Dimensions.get('window');
 
