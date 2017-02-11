@@ -25,16 +25,16 @@ import { getNavigator } from '../route/route';
 var {height, width} = Dimensions.get('window');
 
 const COLUMN = [
-    [require('../image/tutu.jpg'), '京东超市'],
-    [require('../image/tutu.jpg'), '全球购'],
-    [require('../image/tutu.jpg'), '服装城'],
-    [require('../image/tutu.jpg'), '生鲜'],
-    [require('../image/tutu.jpg'), '出行'],
-    [require('../image/tutu.jpg'), '充值中心'],
-    [require('../image/tutu.jpg'), '领京豆'],
-    [require('../image/tutu.jpg'), '领券'],
-    [require('../image/tutu.jpg'), '惠赚钱'],
-    [require('../image/tutu.jpg'), '全部'],
+    [require('../image/palaceNavigation/051z_cc_1.png'), '京东超市'],
+    [require('../image/palaceNavigation/051z_cc_2.png'), '全球购'],
+    [require('../image/palaceNavigation/051z_cc_3.png'), '服装城'],
+    [require('../image/palaceNavigation/051z_cc_4.png'), '生鲜'],
+    [require('../image/palaceNavigation/051z_cc_5.png'), '出行'],
+    [require('../image/palaceNavigation/051z_cc_6.png'), '充值中心'],
+    [require('../image/palaceNavigation/051z_cc_7.png'), '领京豆'],
+    [require('../image/palaceNavigation/051z_cc_8.png'), '领券'],
+    [require('../image/palaceNavigation/051z_cc_9.png'), '惠赚钱'],
+    [require('../image/palaceNavigation/051z_cc_10.png'), '全部'],
 ];
 
 class HomePage extends Component {

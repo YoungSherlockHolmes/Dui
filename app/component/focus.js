@@ -20,11 +20,11 @@ import Swiper from 'react-native-swiper';
 var {height, width} = Dimensions.get('window');
 
 const BANNER_IMGS = [
-    require('../image/focus01.jpg'),
-    require('../image/focus02.jpg'),
-    require('../image/focus03.jpg'),
-    require('../image/focus04.jpg'),
-    require('../image/focus05.jpg')
+    require('../image/focus/051z_cc_1.jpg'),
+    require('../image/focus/051z_cc_2.jpg'),
+    require('../image/focus/051z_cc_3.jpg'),
+    require('../image/focus/051z_cc_4.jpg'),
+    require('../image/focus/051z_cc_5.jpg')
 ];
 
 var styles = StyleSheet.create({
