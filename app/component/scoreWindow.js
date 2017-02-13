@@ -66,20 +66,20 @@ export default class ScoreWindow extends BaseComponent {
                     visible={this.state.show}
                     onShow={() => { } }
                     onRequestClose={() => { } } >
-                   <View style={styles.modalStyle}>
+                    <View style={styles.modalStyle}>
                         <View style={styles.subView}>
                             <Text style={styles.titleText}>评分</Text>
                             <View style={styles.stars}>
-                                <View  style={styles.stars_box}>
-                                <StarRating
-                                    disabled={false}
-                                    maxStars={5}
-                                    rating={this.state.starCount}
-                                    starColor={'#FF7000'}
-                                    starSize={40}
-                                    selectedStar={(rating) => this.onStarRatingPress(rating)}
-                                    />
-                                    </View>
+                                <View style={styles.stars_box}>
+                                    <StarRating
+                                        disabled={false}
+                                        maxStars={5}
+                                        rating={this.state.starCount}
+                                        starColor={'#FF7000'}
+                                        starSize={40}
+                                        selectedStar={(rating) => this.onStarRatingPress(rating)}
+                                        />
+                                </View>
                             </View>
                             <View style={styles.horizontalLine} />
                             <TouchableHighlight
@@ -91,6 +91,11 @@ export default class ScoreWindow extends BaseComponent {
                         </View>
                     </View>
                 </Modal>
+                <View style={{ alignItems: 'center', justifyContent: 'center',marginTop:height/3 }}>
+                    <Text style={{fontSize:20,fontWeight:'800'}}>
+                        感谢您的{this.state.starCount}星好评
+                </Text>
+                </View>
             </View>
         );
     }
@@ -106,7 +111,7 @@ const styles = StyleSheet.create({
     subView: {
         marginLeft: 40, marginRight: 40,
         backgroundColor: '#fff', alignSelf: 'stretch',
-        borderRadius: 10, 
+        borderRadius: 10,
     },
     titleText: {
         marginTop: 10, marginBottom: 5,
@@ -116,8 +121,8 @@ const styles = StyleSheet.create({
     stars: {
         height: 100, borderTopColor: '#9D9D9D', borderTopWidth: 0.5, borderBottomColor: '#9D9D9D', borderBottomWidth: 0.5
     },
-    stars_box:{
-        marginLeft:((width-81-200)/2)*(width/320),marginRight:((width-81-200)/2)*(width/320),marginTop:25,height:50,
+    stars_box: {
+        marginLeft: ((width - 81 - 200) / 2) * (width / 320), marginRight: ((width - 81 - 200) / 2) * (width / 320), marginTop: 25, height: 50,
     },
     buttom: {
         height: 50, backgroundColor: duicss.ORANGE_COLOR, justifyContent: 'center',
