@@ -15,6 +15,7 @@ import Sliders from '../component/sliders';//滑块1
 import Sliders1 from '../component/sliders1';//滑块2
 import ProductList from '../component/homeDiscreteness/productList';//商品列表
 import SearchList from '../component/homeDiscreteness/searchList';//搜索列表
+import Loading from '../common/Loading';//加载
 
 import {
   Navigator,
@@ -60,7 +61,10 @@ routeMap.set('SearchList', {
   component: SearchList,
   sceneAnimation: Navigator.SceneConfigs.FloatFromBottom
 });
-
+routeMap.set('Loading', {
+  component: Loading,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromBottom
+});
 
 export function registerNavigator(tempNavigator) {
   if (_navigator) {

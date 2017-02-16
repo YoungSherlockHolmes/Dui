@@ -29,7 +29,7 @@ const COLUMN = [
     ["magnet", '#1F1F1F', 40, '滑块', 'Sliders'],
     ["globe", '#1F1F1F', 40, '滑块2', 'Sliders1'],
     ["graduation-cap", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
-    ["thumbs-up", '#1F1F1F', 40, '图文列表', 'Developing'],
+    ["thumbs-up", '#1F1F1F', 40, '加载', 'Loading'],
     ["twitter", '#1F1F1F', 40, '通讯录', 'Developing'],
     ["tripadvisor", '#1F1F1F', 40, '图片懒加载', 'Developing'],
 ];
