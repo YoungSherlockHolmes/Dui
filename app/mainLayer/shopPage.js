@@ -30,8 +30,11 @@ const COLUMN = [
     ["globe", '#1F1F1F', 40, '滑块2', 'Sliders1'],
     ["graduation-cap", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
     ["thumbs-up", '#1F1F1F', 40, '加载', 'Loading'],
-    ["twitter", '#1F1F1F', 40, '通讯录', 'Developing'],
+    ["twitter", '#1F1F1F', 40, '选项卡', 'TabView'],
     ["tripadvisor", '#1F1F1F', 40, '图片懒加载', 'Developing'],
+    ["500px", '#1F1F1F', 40, '图文列表', 'Developing'],
+    ["briefcase", '#1F1F1F', 40, '通讯录', 'Developing'],
+    ["calculator", '#1F1F1F', 40, '图片懒加载', 'Developing'],
 ];
 
 class ShopPage extends BaseComponent {

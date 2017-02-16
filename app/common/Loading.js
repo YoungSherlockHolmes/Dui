@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        top: (height - 90 - 70 - 100) / 2,
-        left: (width - 120) / 2,
+        top: height / 2 - 50 - 20,
+        left: width / 2 - 60,
     },
 
     loadingTitle: {

@@ -16,6 +16,7 @@ import Sliders1 from '../component/sliders1';//滑块2
 import ProductList from '../component/homeDiscreteness/productList';//商品列表
 import SearchList from '../component/homeDiscreteness/searchList';//搜索列表
 import Loading from '../common/Loading';//加载
+import TabView from '../component/tabView';//选项卡
 
 import {
   Navigator,
@@ -65,6 +66,11 @@ routeMap.set('Loading', {
   component: Loading,
   sceneAnimation: Navigator.SceneConfigs.FloatFromBottom
 });
+routeMap.set('TabView', {
+  component: TabView,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+
 
 export function registerNavigator(tempNavigator) {
   if (_navigator) {
