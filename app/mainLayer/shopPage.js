@@ -23,18 +23,21 @@ var {height, width} = Dimensions.get('window');
 import Icon from 'react-native-vector-icons/Entypo';
 
 const COLUMN = [
-    ["language", '#1F1F1F', 40, '分类标题', 'ClassifiedTitle'],
-    ["flag", '#1F1F1F', 40, '宫格排版', 'ProductList'],
-    ["github", '#1F1F1F', 40, '欢迎页', 'GuidePage'],
-    ["magnet", '#1F1F1F', 40, '滑块', 'Sliders'],
-    ["globe", '#1F1F1F', 40, '滑块2', 'Sliders1'],
-    ["graduation-cap", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
-    ["thumbs-up", '#1F1F1F', 40, '加载', 'Loading'],
-    ["twitter", '#1F1F1F', 40, '选项卡', 'TabView'],
-    ["tripadvisor", '#1F1F1F', 40, '图片懒加载', 'Developing'],
+    ["500px", '#1F1F1F', 40, '分类标题', 'ClassifiedTitle'],
+    ["500px", '#1F1F1F', 40, '宫格排版', 'ProductList'],
+    ["500px", '#1F1F1F', 40, '欢迎页', 'GuidePage'],
+    ["500px", '#1F1F1F', 40, '滑块', 'Sliders'],
+    ["500px", '#1F1F1F', 40, '滑块2', 'Sliders1'],
+    ["500px", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
+    ["500px", '#1F1F1F', 40, '加载', 'Loading'],
+    ["500px", '#1F1F1F', 40, '选项卡', 'TabView'],
+    ["500px", '#1F1F1F', 40, '图片懒加载', 'Developing'],
     ["500px", '#1F1F1F', 40, '图文列表', 'Developing'],
-    ["briefcase", '#1F1F1F', 40, '通讯录', 'Developing'],
-    ["calculator", '#1F1F1F', 40, '图片懒加载', 'Developing'],
+    ["500px", '#1F1F1F', 40, '通讯录', 'Developing'],
+    ["500px", '#1F1F1F', 40, '图片懒加载', 'Developing'],
+    ["500px", '#1F1F1F', 40, '切换开关', 'Developing'],
+    ["500px", '#1F1F1F', 40, '区域滑块', 'Developing'],
+    ["500px", '#1F1F1F', 40, '单行输入', 'Developing'],
 ];
 
 class ShopPage extends BaseComponent {
@@ -91,7 +94,7 @@ class ShopPage extends BaseComponent {
                     <Text style={styles.tops_text}>www.051z.cc</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    <View style={{ marginTop: 5 }}>
+                    <View style={{ marginTop: 5,marginBottom:5 }}>
                         {this.renderGongge()}
                     </View>
                 </ScrollView>
@@ -105,7 +108,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#EFEFEF',
     },
     tops: {
-        width: width, height: 100, alignItems: 'center', backgroundColor: 'white', justifyContent: 'center'
+        width: width, height: 100, alignItems: 'center', backgroundColor: 'white', justifyContent: 'center',
+        borderBottomColor:'#EFEFEF',borderBottomWidth:1
     },
     tops_text: {
         color: duicss.MAIN_COLOR, textAlign: 'center', fontSize: 20, fontWeight: '800',

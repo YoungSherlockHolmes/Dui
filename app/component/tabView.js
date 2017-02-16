@@ -38,8 +38,8 @@ class TabView extends BaseComponent {
                     renderTabBar={
                         () => <DefaultTabBar
                             underlineHeight={2}
-                            textStyle={{ fontSize: 20, }}
-                            style={{ height: 50, backgroundColor: 'white' }}
+                            textStyle={{ fontSize: 18, }}
+                            style={{ height: 40, backgroundColor: 'white' }}
                             />
                     }
                     tabBarUnderlineColor='#FF0000'
