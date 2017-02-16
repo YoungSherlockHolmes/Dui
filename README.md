@@ -13,3 +13,13 @@
 ##效果图
 * 整体效果
 ![image](./renders/1.jpg)
+
+## 运行
+```
+$ git clone https://github.com/YoungSherlockHolmes/Dui.git
+$ cd Dui
+$ npm install
+$ react-native run-ios/react-native run-android
+```
+
+如果大家觉得有用欢迎给个star✨✨✨✨✨✨✨✨✨
