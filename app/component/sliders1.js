@@ -47,7 +47,7 @@ export default class Sliders extends BaseComponent {
     getNavigationBarProps() {
         return {
             hideRightButton: true,
-            title: '滑块2',
+            title: '拼图验证2',
             leftButtonImage: require('../image/return.png')
         };
     }

@@ -14,7 +14,8 @@ import {
   View,
   Text,
   StyleSheet,
-  Dimensions
+  Dimensions,
+  Platform,
 } from 'react-native';
 import duicss from '../css/Duicss';
 
@@ -22,6 +23,7 @@ const windowWidth = Dimensions.get('window').width;
 
 const defaultNavigationHeight = 50;
 const defaultButtonHeight = defaultNavigationHeight - 25;//左侧图片的高度
+export const STATUS_BAR_HEIGHT = (Platform.OS === 'ios' ? 20 : 0) //ios需要加20为沉浸式状态栏占位
 
 
 const styles = StyleSheet.create({
@@ -31,7 +33,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomColor: duicss.GRAY_COLOR,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginTop:STATUS_BAR_HEIGHT
   },
   navigationBarTitleContainer: {
     position: 'absolute',
