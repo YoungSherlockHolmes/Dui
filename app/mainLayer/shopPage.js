@@ -31,13 +31,16 @@ const COLUMN = [
     ["500px", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
     ["500px", '#1F1F1F', 40, '加载', 'Loading'],
     ["500px", '#1F1F1F', 40, '选项卡', 'TabView'],
-    ["500px", '#1F1F1F', 40, '图片懒加载', 'Developing'],
-    ["500px", '#1F1F1F', 40, '图文列表', 'Developing'],
-    ["500px", '#1F1F1F', 40, '通讯录', 'Developing'],
-    ["500px", '#1F1F1F', 40, '图片懒加载', 'Developing'],
-    ["500px", '#1F1F1F', 40, '切换开关', 'Developing'],
-    ["500px", '#1F1F1F', 40, '区域滑块', 'Developing'],
-    ["500px", '#1F1F1F', 40, '单行输入', 'Developing'],
+    ["500px", '#1F1F1F', 40, 'Toast', 'Toasts'],
+    ["500px", '#1F1F1F', 40, '常见按钮', 'CommoncButton'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, '00', 'Developing'],
 ];
 
 class ShopPage extends BaseComponent {
@@ -54,7 +57,7 @@ class ShopPage extends BaseComponent {
     }
 
     renderGongge() {
-        //此方法中的数组必须是3的倍数，否则会报错
+        //此方法中的数组必须是3的倍数，否则会报错，可用listView代替
         var allNav = [];
         for (var i = 0; i < Math.round(COLUMN.length / 3); i++) {
             let one = 3 * i;
@@ -94,7 +97,7 @@ class ShopPage extends BaseComponent {
                     <Text style={styles.tops_text}>www.051z.cc</Text>
                 </View>
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    <View style={{ marginTop: 5,marginBottom:5 }}>
+                    <View style={{ marginTop: 5, marginBottom: 5 }}>
                         {this.renderGongge()}
                     </View>
                 </ScrollView>
@@ -109,7 +112,7 @@ const styles = StyleSheet.create({
     },
     tops: {
         width: width, height: 100, alignItems: 'center', backgroundColor: 'white', justifyContent: 'center',
-        borderBottomColor:'#EFEFEF',borderBottomWidth:1
+        borderBottomColor: '#EFEFEF', borderBottomWidth: 1
     },
     tops_text: {
         color: duicss.MAIN_COLOR, textAlign: 'center', fontSize: 20, fontWeight: '800',

@@ -32,7 +32,11 @@ class ClassifiedTitle extends BaseComponent {
     renderBody() {
         return (
             <View style={styles.container}>
-                <View><Text style={{ color: 'lightgreen' }}>分类标题</Text></View>
+                <View style={[styles.Title,styles.Title_mg]}>
+                    <View style={styles.Title_box}>
+                        <Text style={styles.Title_tx}>临武一中官网051z.cc</Text>
+                    </View>
+                </View>
             </View>
         );
     }
@@ -42,6 +46,18 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#EFEFEF',
     },
+    Title: {
+        backgroundColor: 'white', height: 50, justifyContent: 'center'
+    },
+    Title_box: {
+        marginLeft: 15, marginRight: 15, borderLeftColor: '#000', borderLeftWidth: 3, paddingLeft: 10,
+    },
+    Title_tx: {
+        color: '#000', fontSize: 16
+    },
+    Title_mg:{
+        marginTop:10
+    }
 
 });
 

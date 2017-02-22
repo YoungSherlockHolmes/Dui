@@ -17,6 +17,8 @@ import ProductList from '../component/homeDiscreteness/productList';//商品列�
 import SearchList from '../component/homeDiscreteness/searchList';//搜索列表
 import Loading from '../common/Loading';//加载
 import TabView from '../component/tabView';//选项卡
+import Toasts from '../component/Toasts';//Toast
+import CommoncButton from '../component/commoncButton';//常见按钮
 
 import {
   Navigator,
@@ -70,7 +72,14 @@ routeMap.set('TabView', {
   component: TabView,
   sceneAnimation: Navigator.SceneConfigs.FloatFromRight
 });
-
+routeMap.set('Toasts', {
+  component: Toasts,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('CommoncButton', {
+  component: CommoncButton,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
 
 export function registerNavigator(tempNavigator) {
   if (_navigator) {
