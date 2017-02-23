@@ -12,6 +12,8 @@
 
 ##效果图
 * 整体效果
+![image](./renders/2.jpg)
+![image](./renders/3.jpg)
 ![image](./renders/1.jpg)
 
 ## 运行

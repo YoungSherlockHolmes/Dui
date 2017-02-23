@@ -19,6 +19,9 @@ import Loading from '../common/Loading';//加载
 import TabView from '../component/tabView';//选项卡
 import Toasts from '../component/Toasts';//Toast
 import CommoncButton from '../component/commoncButton';//常见按钮
+import Drawer from '../component/drawer';//Drawer
+import Login from '../component/login';//注册
+import LeaveWord from '../component/leaveWord';//留言框
 
 import {
   Navigator,
@@ -78,6 +81,18 @@ routeMap.set('Toasts', {
 });
 routeMap.set('CommoncButton', {
   component: CommoncButton,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('Drawer', {
+  component: Drawer,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('Login', {
+  component: Login,
+  sceneAnimation: Navigator.SceneConfigs.FloatFromRight
+});
+routeMap.set('LeaveWord', {
+  component: LeaveWord,
   sceneAnimation: Navigator.SceneConfigs.FloatFromRight
 });
 

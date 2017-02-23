@@ -26,21 +26,21 @@ const COLUMN = [
     ["500px", '#1F1F1F', 40, '分类标题', 'ClassifiedTitle'],
     ["500px", '#1F1F1F', 40, '宫格排版', 'ProductList'],
     ["500px", '#1F1F1F', 40, '欢迎页', 'GuidePage'],
-    ["500px", '#1F1F1F', 40, '滑块', 'Sliders'],
-    ["500px", '#1F1F1F', 40, '滑块2', 'Sliders1'],
+    ["500px", '#1F1F1F', 40, '拼图验证', 'Sliders'],
+    ["500px", '#1F1F1F', 40, '拼图验证2', 'Sliders1'],
     ["500px", '#1F1F1F', 40, '评分弹窗', 'ScoreWindow'],
     ["500px", '#1F1F1F', 40, '加载', 'Loading'],
     ["500px", '#1F1F1F', 40, '选项卡', 'TabView'],
     ["500px", '#1F1F1F', 40, 'Toast', 'Toasts'],
     ["500px", '#1F1F1F', 40, '常见按钮', 'CommoncButton'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
-    ["500px", '#1F1F1F', 40, '00', 'Developing'],
+    ["500px", '#1F1F1F', 40, 'Drawer', 'Drawer'],
+    ["500px", '#1F1F1F', 40, '注册', 'Login'],
+    ["500px", '#1F1F1F', 40, '留言框', 'LeaveWord'],
+    ["500px", '#1F1F1F', 40, '', ''],
+    ["500px", '#1F1F1F', 40, '', ''],
+    ["500px", '#1F1F1F', 40, '', ''],
+    ["500px", '#1F1F1F', 40, '', ''],
+    ["500px", '#1F1F1F', 40, '', ''],
 ];
 
 class ShopPage extends BaseComponent {
@@ -69,20 +69,20 @@ class ShopPage extends BaseComponent {
                     LFiconName={COLUMN[one][0]}
                     LFiconColor={COLUMN[one][1]}
                     LFiconSize={COLUMN[one][2]}
-                    leftText={COLUMN[one][3]}
-                    leftUrl={() => this._onPress(COLUMN[one][4])}
+                    leftText={COLUMN[one][3] ? COLUMN[one][3] : '00'}
+                    leftUrl={() => this._onPress(COLUMN[one][4] ? COLUMN[one][4] : 'Developing')}
 
                     CTiconName={COLUMN[two][0]}
                     CTiconColor={COLUMN[two][1]}
                     CTiconSize={COLUMN[two][2]}
-                    centerText={COLUMN[two][3]}
-                    cenertUrl={() => this._onPress(COLUMN[two][4])}
+                    centerText={COLUMN[two][3] ? COLUMN[two][3] : '00'}
+                    cenertUrl={() => this._onPress(COLUMN[two][4] ? COLUMN[two][4] : 'Developing')}
 
                     RGiconName={COLUMN[three][0]}
                     RGiconColor={COLUMN[three][1]}
                     RGiconSize={COLUMN[three][2]}
-                    rightText={COLUMN[three][3]}
-                    rightUrl={() => this._onPress(COLUMN[three][4])}
+                    rightText={COLUMN[three][3] ? COLUMN[three][3] : '00'}
+                    rightUrl={() => this._onPress(COLUMN[three][4] ? COLUMN[three][4] : 'Developing')}
                     />
             );
         }
