@@ -11,9 +11,6 @@
 - 本项目中使用的基础图标都是来源于react-native-vector-icons
 
 ##效果图
-* 整体效果
-![image](./renders/2.jpg)
-![image](./renders/3.jpg)
 ![image](./renders/1.jpg)
 
 ## 运行
