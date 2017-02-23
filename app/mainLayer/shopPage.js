@@ -33,7 +33,7 @@ const COLUMN = [
     ["500px", '#1F1F1F', 40, '选项卡', 'TabView'],
     ["500px", '#1F1F1F', 40, 'Toast', 'Toasts'],
     ["500px", '#1F1F1F', 40, '常见按钮', 'CommoncButton'],
-    ["500px", '#1F1F1F', 40, 'Drawer', 'Drawer'],
+    ["500px", '#1F1F1F', 40, 'Drawer', 'Drawers'],
     ["500px", '#1F1F1F', 40, '注册', 'Login'],
     ["500px", '#1F1F1F', 40, '留言框', 'LeaveWord'],
     ["500px", '#1F1F1F', 40, '', ''],
