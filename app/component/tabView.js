@@ -35,18 +35,17 @@ class TabView extends BaseComponent {
         return (
             <View style={styles.container}>
                 <ScrollableTabView
-                    renderTabBar={
+                    renderTabBar={ //自定义选项卡样式
                         () => <DefaultTabBar
                             underlineHeight={2}
                             textStyle={{ fontSize: 18, }}
-                            style={{ height: 40, backgroundColor: 'white' }}
+                            style={{ height: 50, backgroundColor: 'white' }}
                             />
                     }
-                    tabBarUnderlineColor='#FF0000'
-                    tabBarBackgroundColor='#EFEFEF'
-                    tabBarActiveTextColor='#0294f7'
-                    tabBarInactiveTextColor='#A0A0A0'
-                    tabBarUnderlineStyle={{ backgroundColor: '#0294f7' }}
+                    tabBarBackgroundColor='white'
+                    tabBarActiveTextColor='#0294f7'     //选中字体颜色
+                    tabBarInactiveTextColor='#A0A0A0' //默认字体颜色
+                    tabBarUnderlineStyle={{ backgroundColor: '#0294f7' }} //下划线颜色
                     tabBarPosition='top'
                     contentProps={{ bounces: false }}    //两个属性组合使用可使选项卡不能左右滑动
                     locked={true}            //缺一不可
@@ -85,8 +84,8 @@ class TabView extends BaseComponent {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        top: 20,
-        backgroundColor: 'rgb(240, 240, 240)'
+        top: 10,
+        backgroundColor: 'white'
     },
     center: {
         flex: 1, backgroundColor: 'white',
